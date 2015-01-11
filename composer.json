@@ -6,5 +6,12 @@
             "email": "mikakane2@gmail.com"
         }
     ],
-    "require": {}
+    "autoload":{
+        "psr-4":{"Chatbox\\": "src/"}
+    },
+    "require": {
+        "mikakane/migrate": "dev-master"
+    },
+    "minumum-stability":"dev"
+
 }
