@@ -10,7 +10,8 @@
         "psr-4":{"Chatbox\\": "src/"}
     },
     "require": {
-        "mikakane/migrate": "dev-master"
+        "mikakane/migrate": "dev-master",
+        "silex/silex": "1.2"
     },
     "minumum-stability":"dev"
 
