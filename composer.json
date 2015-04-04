@@ -7,11 +7,11 @@
         }
     ],
     "autoload":{
-        "psr-4":{"Chatbox\\": "src/"}
+        "psr-4":{"Chatbox\\Chatbox\\": "src/"}
     },
     "require": {
-        "mikakane/migrate": "dev-master",
-        "silex/silex": "1.2"
+        "chatbox/migrate": "dev-master",
+        "chatbox/phputil": "dev-master"
     },
     "minumum-stability":"dev"
 

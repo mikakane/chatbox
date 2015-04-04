@@ -8,30 +8,13 @@ return [
         "cb_room" => function(Blueprint $table){
                 $table->unsignedInteger("id",true);
                 $table->string("srug");
-                $table->unsignedInteger("tenants");
-                $table->text("prop");
+                $table->text("data");
                 $table->dateTime("created_at");
                 $table->dateTime("updated_at");
             },
         "cb_room_tag" => function(Blueprint $table){
                 $table->unsignedInteger("id",true);
                 $table->unsignedInteger("room_id");
-                $table->string("type");
-                $table->string("value");
-                $table->dateTime("created_at");
-                $table->dateTime("updated_at");
-            },
-        "cb_user" => function(Blueprint $table){
-                $table->unsignedInteger("id",true);
-                $table->string("name");
-                $table->string("enter_key");
-                $table->text("prop");
-                $table->dateTime("created_at");
-                $table->dateTime("updated_at");
-            },
-        "cb_user_tag" => function(Blueprint $table){
-                $table->unsignedInteger("id",true);
-                $table->unsignedInteger("user_id");
                 $table->string("type");
                 $table->string("value");
                 $table->dateTime("created_at");
